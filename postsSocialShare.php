@@ -6,7 +6,10 @@
  * Author:           roman
  */
 
-if (!defined(            ‘ABSPATH’ )) {
-echo "ghjghj";
-                                  }
-
+// protect the file
+if (!defined('ABSPATH')) {
+    exit;
+}
+// include the php scripts
+require_once plugin_dir_path(__FILE__) . "/includes/main_php.php";
+require_once plugin_dir_path(__FILE__) . "/includes/add_content.php";
